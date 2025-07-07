@@ -1,0 +1,178 @@
+/* --- ESTILOS GERAIS E RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EBECEE; /* Cinza claro do fundo */
+    color: #002F52; /* Azul escuro principal */
+}
+
+/* --- CABEÇALHO --- */
+.cabecalho {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cabecalho nav a {
+    margin: 0 1em;
+    font-weight: 500;
+}
+
+/* --- BANNER PRINCIPAL --- */
+.banner {
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    color: #FFF;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.banner h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+/* --- SEÇÃO DO CATÁLOGO --- */
+.titulo-secao {
+    color: #EB9B00; /* Laranja/dourado para títulos */
+    background-color: #FFF;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 3em;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em 5%;
+}
+
+.card-filme {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.card-filme:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-filme a {
+    display: block;
+    padding: 1.5em;
+}
+
+.card-filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-filme h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1em;
+    color: #EB9B00;
+}
+
+.card-filme p {
+    font-size: 14px;
+    margin-top: 0.5em;
+    line-height: 1.4;
+    color: #474646;
+}
+
+/* --- PÁGINA DE ANÁLISE --- */
+.container-analise {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 2em;
+}
+
+.titulo-analise {
+    text-align: center;
+    color: #EB9B00;
+    font-size: 32px;
+    margin-bottom: 1.5em;
+}
+
+.video-trailer {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.video-trailer iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.questoes h3 {
+    font-size: 22px;
+    border-left: 5px solid #002F52;
+    padding-left: 10px;
+    margin-bottom: 1em;
+}
+
+.questoes ol {
+    padding-left: 20px;
+}
+
+.questoes li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+    color: #333;
+}
+
+
+/* --- RODAPÉ --- */
+.rodape {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 2em 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+}
